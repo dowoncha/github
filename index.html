@@ -14,10 +14,10 @@
 
 		<!-- Printing and PDF exports -->
 		<script>
-			var link = document.createElement( 'link' );
+			const link = document.createElement( 'link' );
 			link.rel = 'stylesheet';
 			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			// link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 	</head>
@@ -27,6 +27,10 @@
 				<section id="introduction">Singularity</section>
         <section id="history">History of AI</section>
         <section id="current-state">Current State of AI</section>
+        <section id="pop-culture" data-background="assets/images/westworld.gif">
+          <h2>Pop Culture</h2>
+          
+        </section>
         <section id="credits">Thanks to: </section>
 			</div>
 		</div>

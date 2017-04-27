@@ -1,25 +1,25 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Singularity</title>
+	<title>Singularity</title>
 
-		<link rel="stylesheet" href="assets/css/reveal.css">
-		<link rel="stylesheet" href="assets/css/theme/black.css">
+	<link rel="stylesheet" href="assets/css/reveal.css">
+	<link rel="stylesheet" href="assets/css/theme/black.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.19.1/vis.min.js"></script>
-  	<link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.19.1/vis.min.css" rel="stylesheet" type="text/css" />
-		<!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="assets/lib/css/zenburn.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.19.1/vis.min.css" rel="stylesheet" type="text/css" />
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="assets/lib/css/zenburn.css">
 
-    <link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/main.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			const link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
+	<!-- Printing and PDF exports -->
+	<script>
+		const link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
 			// link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
@@ -35,25 +35,33 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-		<section id="introduction">Singularity</section>
-        <section id="history" data-background-image="assets/images/history.jpg">
-        	<section>
-        		<h1>HISTORY OF AI</h1>
-        	</section>
-        	<section>
-        	<div id="visualization"></div>
-        	<script type="text/javascript">
+				<section id="introduction" data-background-image="assets/images/brain.jpg">
+					<h1>Singularity</h1>
+					<p style="background-color:rgba(0, 0, 0, 0.75)">"The technological singularity is the hypothesis that the invention of artificial superintelligence will abruptly trigger runaway technological growth, resulting in unfathomable changes to human civilization."</p>
+				</section>
+				<section id="whatisai">
+					<section>
+						<h1>What is AI?</h1>
+					</section>
+				</section>
+				<section id="history" data-background-image="assets/images/history.jpg">
+					<section>
+						<h1>HISTORY OF AI</h1>
+					</section>
+					<section>
+						<div id="visualization"></div>
+						<script type="text/javascript">
 			  // DOM element where the Timeline will be attached
 			  var container = document.getElementById('visualization');
 
 			  // Create a DataSet (allows two way data-binding)
 			  var items = new vis.DataSet([
-			    {id: 1, content: 'Godel sets up TCS', start: '1931'},
-			    {id: 2, content: 'Turing and his machine', start: '1936'},
-			    {id: 3, content: 'Zuse plays chess', start: '1941'},
-			    {id: 4, content: 'Hardware advancements', start: '1945'},
-			    {id: 5, content: 'AI defined', start: '1956'}
-			   ]);
+			  	{id: 1, content: 'Godel sets up TCS', start: '1931'},
+			  	{id: 2, content: 'Turing and his machine', start: '1936'},
+			  	{id: 3, content: 'Zuse plays chess', start: '1941'},
+			  	{id: 4, content: 'Hardware advancements', start: '1945'},
+			  	{id: 5, content: 'AI defined', start: '1956'}
+			  	]);
 
 			  // Configuration for the Timeline
 			  var options = {};
@@ -61,62 +69,65 @@
 			  // Create a Timeline
 			  var timeline = new vis.Timeline(container, items, options);
 			</script>
-        	</section>
-        	<section>
-        	    <div id="slide">
-        			<h3>1931 - Kurt Godel</h3>
-        			<p>The work of Kurt Godel left a foundation for other AI pioneers to build upon. Godel is credited with setting up theoretical computer science. TCS includes topics such as data structures, algorithms, machine learning, and more. These fields have become extremely important to AI as we see it today.</p>
-        		</div>
-        	</section>
-			<section data-background-image="assets/images/turing.jpg">
+		</section>
+		<section>
 			<div id="slide">
-        		<h3>1936 - Alan Turing</h3>
-        		<p>Alan Turing is most famous for cracking the German Enigma machine during World War II, but perhaps his largest success was the invention of the Turing machine in 1936. Turing was able to reformulate much of the work that Godel had started and did so much more efficiently.</p>
-        	</div>
-        	</section>
-        	<section>
-        		<div id="slide">
-        			<h3>1935-1941 - Konrad Zuse</h3>
-        			<p>Meanwhile Konrad Zuse was busy working on his own additions to AI. He built the very first functioning program-controlled computers between 1935 and 1941. He even went on to write the first chess playing program which was a basic AI in itself.</p>
-        		</div>
-        	</section>
-        	<section>
-        	<div id="slide">
-        		<h3>1940s - Hardware Advancements</h3>
-        		<p>Now, thanks to Godel, Turing, and Zuse, the beginnings of modern computer science were in place. Through the 1940s the technology of the computers themselves were drastically improved. This improvement was critical to the success of future AI attempts.</p>
-        		</div>
-        	</section>
-        	<section data-background-image="assets/images/jmac.jpg">
-	        	<div id="slide">
-	        		<h3>1950s - AI Defined</h3>
-	        		<p>In 1950 Alan Turing created a test that determined whether a machine was intelligent or not. Shortly thereafter in 1956 John McCarthy coined the term Artificial Intelligence.</p>
-	        	</div>
-        	</section>
-        </section>
-        <section id="current-state">Current State of AI</section>
-        <section id="pop-culture">
-          <section>
-            <h2>Pop Culture</h2>
-            <p>Artificial Intelligence is popular in our culture. Many sci-fi authors have
-              their own interpretations and predictions on robot development.</p>
-          </section>
-          <section id="futurama">
-          </section>
-          <section id="westworld" data-background="assets/images/westworld.gif">
-          </section>
-        </section>
-        <section id="credits">Thanks to: </section>
+				<h3>1931 - Kurt Godel</h3>
+				<p>The work of Kurt Godel left a foundation for other AI pioneers to build upon. Godel is credited with setting up theoretical computer science. TCS includes topics such as data structures, algorithms, machine learning, and more. These fields have become extremely important to AI as we see it today.</p>
 			</div>
-		</div>
+		</section>
+		<section data-background-image="assets/images/turing.jpg">
+			<div id="slide">
+				<h3>1936 - Alan Turing</h3>
+				<p>Alan Turing is most famous for cracking the German Enigma machine during World War II, but perhaps his largest success was the invention of the Turing machine in 1936. Turing was able to reformulate much of the work that Godel had started and did so much more efficiently.</p>
+			</div>
+		</section>
+		<section>
+			<div id="slide">
+				<h3>1935-1941 - Konrad Zuse</h3>
+				<p>Meanwhile Konrad Zuse was busy working on his own additions to AI. He built the very first functioning program-controlled computers between 1935 and 1941. He even went on to write the first chess playing program which was a basic AI in itself.</p>
+			</div>
+		</section>
+		<section>
+			<div id="slide">
+				<h3>1940s - Hardware Advancements</h3>
+				<p>Now, thanks to Godel, Turing, and Zuse, the beginnings of modern computer science were in place. Through the 1940s the technology of the computers themselves were drastically improved. This improvement was critical to the success of future AI attempts.</p>
+			</div>
+		</section>
+		<section data-background-image="assets/images/jmac.jpg">
+			<div id="slide">
+				<h3>1950s - AI Defined</h3>
+				<p>In 1950 Alan Turing created a test that determined whether a machine was intelligent or not. Shortly thereafter in 1956 John McCarthy coined the term Artificial Intelligence.</p>
+			</div>
+		</section>
+	</section>
+	<section id="future">
+					<section>
+						<h1>Future of AI</h1>
+					</section>
+				</section>
+	<section id="pop-culture">
+		<section>
+			<h1>AI in pop culture</h1>
+			<p>Artificial Intelligence is popular in our culture. Many sci-fi authors have
+				their own interpretations and predictions on robot development.</p>
+			</section>
+			<section id="futurama">
+			</section>
+			<section id="westworld" data-background="assets/images/westworld.gif">
+			</section>
+		</section>
+	</div>
+</div>
 
-		<script src="assets/lib/js/head.min.js"></script>
-		<script src="assets/js/reveal.js"></script>
+<script src="assets/lib/js/head.min.js"></script>
+<script src="assets/js/reveal.js"></script>
 
-		<script>
+<script>
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true
 			});
 		</script>
 	</body>
-</html>
+	</html>

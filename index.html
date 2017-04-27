@@ -8,7 +8,8 @@
 
 		<link rel="stylesheet" href="assets/css/reveal.css">
 		<link rel="stylesheet" href="assets/css/theme/black.css">
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.19.1/vis.min.js"></script>
+  	<link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.19.1/vis.min.css" rel="stylesheet" type="text/css" />
 		<!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="assets/lib/css/zenburn.css">
 
@@ -26,6 +27,9 @@
 			#slide {
 				background-color:rgba(0, 0, 0, 0.75);
 			}
+			#visualization {
+				background-color:rgba(255, 255, 255, 0.75);
+			}
 		</style>
 	</head>
 	<body>
@@ -37,10 +41,26 @@
         		<h1>HISTORY OF AI</h1>
         	</section>
         	<section>
-        		<div id="slide">
-        			<h3>Timeline of AI</h3>
-        			<p>The history of artificial intelligence dates back to the theories of Aristotle, but it wasn’t until 1931 that AI as we know it today became a possibility.</p>
-        		</div>
+        	<div id="visualization"></div>
+        	<script type="text/javascript">
+			  // DOM element where the Timeline will be attached
+			  var container = document.getElementById('visualization');
+
+			  // Create a DataSet (allows two way data-binding)
+			  var items = new vis.DataSet([
+			    {id: 1, content: 'Godel sets up TCS', start: '1931'},
+			    {id: 2, content: 'Turing and his machine', start: '1936'},
+			    {id: 3, content: 'Zuse plays chess', start: '1941'},
+			    {id: 4, content: 'Hardware advancements', start: '1945'},
+			    {id: 5, content: 'AI defined', start: '1956'}
+			   ]);
+
+			  // Configuration for the Timeline
+			  var options = {};
+
+			  // Create a Timeline
+			  var timeline = new vis.Timeline(container, items, options);
+			</script>
         	</section>
         	<section>
         	    <div id="slide">
@@ -61,8 +81,10 @@
         		</div>
         	</section>
         	<section>
+        	<div id="slide">
         		<h3>1940s - Hardware Advancements</h3>
         		<p>Now, thanks to Godel, Turing, and Zuse, the beginnings of modern computer science were in place. Through the 1940s the technology of the computers themselves were drastically improved. This improvement was critical to the success of future AI attempts.</p>
+        		</div>
         	</section>
         	<section data-background-image="assets/images/jmac.jpg">
 	        	<div id="slide">

@@ -1,16 +1,44 @@
-*:after, *:before {
-  box-sizing: inherit;
+@font-face {
+    font-family: digitall;
+    src: url(fonts/digitall.ttf)
+}
+
+*:after,
+*:before {
+    box-sizing: inherit;
 }
 
 html {
-  box-sizing: border-box;
-  font-size: 62.5%;
+    box-sizing: border-box;
+    font-size: 62.5%;
 }
 
 body {
-  font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  font-size: 1.6em;
-  font-weight: 300;
-  letter-spacing: .01em;
-  line-height: 1.6;
+    font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 1.6em;
+    font-weight: 300;
+    letter-spacing: .01em;
+    line-height: 1.6;
+    background-color: #333;
+}
+
+.panel-default {
+    background-color: rgba(243, 243, 243, 0.4)
+}
+
+.navbar-default {
+    background-color: rgba(46, 46, 46, 0.5);
+    border-color: transparent;
+}
+
+#slide {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+#visualization {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.digitall {
+    font-family: digitall;
 }

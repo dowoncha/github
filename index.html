@@ -1,330 +1,389 @@
 <!doctype html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>Singularity</title>
+    <title>Singularity</title>
 
-	<link rel="stylesheet" href="assets/css/reveal.css">
-	<link rel="stylesheet" href="assets/css/theme/black.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.19.1/vis.min.js"></script>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.19.1/vis.min.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<!-- Theme used for syntax highlighting of code -->
-	<link rel="stylesheet" href="assets/lib/css/zenburn.css">
+    <link rel="stylesheet" href="assets/css/reveal.css">
+    <link rel="stylesheet" href="assets/css/theme/black.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.19.1/vis.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.19.1/vis.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <!--<link rel="stylesheet" href="assets/lib/css/zenburn.css">-->
 
-	<link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 
-	<!-- Printing and PDF exports -->
-	<script>
-		const link = document.createElement( 'link' );
-		link.rel = 'stylesheet';
-		link.type = 'text/css';
-			// link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-		<style type="text/css">
-			#slide {
-				background-color:rgba(0, 0, 0, 0.75);
-			}
-			#visualization {
-				background-color:rgba(255, 255, 255, 0.75);
-			}
-		</style>
-	</head>
-	<body>
-		<nav class="navbar navbar-inverse" style="margin-bottom: 0">
-			<div class="container">
-				<ul class="nav navbar-nav">
-        			<li><a href="#/" class="navbar-brand">Singularity</a></li>
-        			<li><a href="#/what-is">What is AI</a></li>
-        			<li><a href="#/history">History</a></li>
-        			<li><a href="#/future-section">Future</a></li>
-        			<li><a href="#/pop-culture">Super Future</a></li>
-      			</ul>
-			</div>
-		</nav>
-		<div class="reveal">
-			<div class="slides">
-				<section id="introduction" data-background-image="assets/images/brain.jpg">
-				<div id="slide">
-					<h1>Singularity</h1>
-					<p style="font-size:24px;">"The technological singularity is the hypothesis that the invention of artificial superintelligence will abruptly trigger runaway technological growth, resulting in unfathomable changes to human civilization."</p>
-					<p style="font-size:20px;">Use arrow keys to navigate. Left/Right to change subjects. Up/Down to read more.</p>
-				</div>
-				</section>
-				<section id="what-is" data-background="assets/images/ai-background.jpg" data-background-size=fit>
-        	<section>
-        		<h1>What is AI?</h1>
-        	</section>
-        	<section id="types">
-        	<div id="slide">
-        		<h3>Types of AI:</h3>
-        		<small><ul>
-        			<li class="fragment fade-in"><b>Artificial Narrow Intelligence (Weak AI)</b> = An artificial intelligence system that can only specialize in one area and thats it.</li>
+    <!-- Printing and PDF exports -->
+    <script>
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        // link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <style type="text/css">
+        #slide {
+            background-color: rgba(0, 0, 0, 0.75);
+        }
+        
+        #visualization {
+            background-color: rgba(255, 255, 255, 0.75);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" style="margin-bottom: 0">
+        <div class="container">
+            <ul class="nav navbar-nav menu">
+                <li><a href="#/" class="navbar-brand">Singularity</a></li>
+                <li><a href="#/what-is">What is AI</a></li>
+                <li><a href="#/history">History</a></li>
+                <li><a href="#/future-section">Future</a></li>
+                <li><a href="#/pop-culture">Super Future</a></li>
+                <li><a href="#/works-cited">Citations</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar-->
+    <div class="reveal">
+        <div class="slides">
+            <section id="introduction" data-background-image="assets/images/brain.jpg">
+                <div id="slide">
+                    <h1>Singularity</h1>
+                    <p style="font-size:24px;">"The technological singularity is the hypothesis that the invention of artificial superintelligence will abruptly trigger runaway technological growth, resulting in unfathomable changes to human civilization."</p>
+                    <p style="font-size:20px;">Use arrow keys to navigate. Left/Right to change subjects. Up/Down to read more.</p>
+                </div>
+            </section>
+            <section id="what-is" data-background="assets/images/ai-background.jpg" data-background-size=fit>
+                <section>
+                    <h1>What is AI?</h1>
+                </section>
+                <section id="types">
+                    <div id="slide">
+                        <h3>Types of AI:</h3>
+                        <small><ul>
+       			<li class="fragment fade-in"><b>Artificial Narrow Intelligence (Weak AI)</b> = An artificial intelligence system that can only specialize in one area and thats it.</li>
         			<li class="fragment fade-in"><b>Artificial General Intelligence (AGI/Strong AI)</b> = Intelligence of a machine that could successfully perform any intellectual task that a human being can and is as smart as a human across the board.</li>
         			<li class="fragment fade-in"><b>Artificial Superintelligence (ASI)</b> = Said by Oxford philosopher Nick Bostrom to be "an intellect that is much smarter than the best human brains in practically every field, including scientific creativity, general wisdom, and social skills."</li>
 				</ul></small>
-                <p class="fragment">Want to know more? Then check out <a href="http://www.huffingtonpost.com/wait-but-why/the-ai-revolution-the-road-to-superintelligence_b_6648480.html">this article</a> from the Huffington Post</p>
-                </div>
-        	</section>
-        	<section id="requirements">
-        	<div id="slide">
-        		<h3>Requirements of AI:</h3>
-    			<ol>
-    				<li class="fragment fade-up">Reason</li>
-    				<li class="fragment fade-up">Represent Knowledge</li>
-    				<li class="fragment fade-up">Plan</li>
-    				<li class="fragment fade-up">Learn</li>
-    				<li class="fragment fade-up">Communicate in Natural Language</li>
-    				<li class="fragment fade-up">Integrate Skills Towards Common Goals</li>
-    			</ol>
-    			</div>
-        	</section>
-        	<section id="confirmation">
-        	<div id="slide">
-        		<h3>How do we know its the real thing?</h3>
-				<p class="fragment fade-down">By far the most well known is the <a href="#/turing">Turing Test</a></p>
-				<p class="fragment fade-left">Next is a test that is considered to (probably) be more difficult is the <a href="#/coffee">Coffee Test</a></p>
-				<p class="fragment fade-right">Our next way of testing AI which is believed to be a more challenging definition is the <a href="#/robo-college">Robot College Student Test</a></p>
-				<p class="fragment fade-up">The final test for AI and considered to be "unfair" in difficulty because not all humans can complete it is the <a href="#/employment">Employment Test</a></p>
-				</div>
-        	</section>
-        	<section id="turing">
-        	<div id="slide">
-        		<h3>THE TURING TEST</h3>
-        		<p>Man vs. Computer: One participant must be able to distinguish human from computer.
-        		If the participant cannot distinguish the two then the computer has passed.</p>
-        		<iframe width="500" height="300" src="https://www.youtube.com/embed/sXx-PpEBR7k" frameborder="0" allowfullscreen>
+                        <p class="fragment">Want to know more? Then check out <a href="http://www.huffingtonpost.com/wait-but-why/the-ai-revolution-the-road-to-superintelligence_b_6648480.html">this article</a> from the Huffington Post</p>
+                </section>
+                <section id="requirements">
+                    <div id="slide">
+                        <h3>Requirements of AI:</h3>
+                        <ol>
+                            <li class="fragment fade-up">Reason</li>
+                            <li class="fragment fade-up">Represent Knowledge</li>
+                            <li class="fragment fade-up">Plan</li>
+                            <li class="fragment fade-up">Learn</li>
+                            <li class="fragment fade-up">Communicate in Natural Language</li>
+                            <li class="fragment fade-up">Integrate Skills Towards Common Goals</li>
+                        </ol>
+                    </div>
+                </section>
+                <section id="confirmation">
+                    <div id="slide">
+                        <h3>How do we know its the real thing?</h3>
+                        <p class="fragment fade-down">By far the most well known is the <a href="#/turing">Turing Test</a></p>
+                        <p class="fragment fade-left">Next is a test that is considered to (probably) be more difficult is the <a href="#/coffee">Coffee Test</a></p>
+                        <p class="fragment fade-right">Our next way of testing AI which is believed to be a more challenging definition is the <a href="#/robo-college">Robot College Student Test</a></p>
+                        <p class="fragment fade-up">The final test for AI and considered to be "unfair" in difficulty because not all humans can complete it is the <a href="#/employment">Employment Test</a></p>
+                    </div>
+                </section>
+                <section id="turing">
+                    <div id="slide">
+                        <h3>THE TURING TEST</h3>
+                        <p>Man vs. Computer: One participant must be able to distinguish human from computer. If the participant cannot distinguish the two then the computer has passed.</p>
+                        <iframe width="500" height="300" src="https://www.youtube.com/embed/sXx-PpEBR7k" frameborder="0" allowfullscreen>
         		</iframe>
-        		</div>
-        	</section>
-        	<section id="coffee" data-background-image="assets/images/ai-background-woz.jpeg">
-        	<div id="slide">
-        		<h3>THE COFFEE TEST</h3>
-        		<p>A test created by Ben Goertzel and made more popular behind the voice of Steve Wozniak where the AI passes if it can go into an average American house and figure out how to make coffee, 
-        		including identifying the coffee machine, figuring out what the buttons do, finding the coffee in the cabinet, etc. on its own
-        		<p><small>Click this link <a href="http://www.dailytech.com/Apple+Cofounder+Woz+Talks+About+the+Future+of+Robotics/article9022.htm">here</a> to learn more from Wozniak about his AI test!
+                    </div>
+                </section>
+                <section id="coffee" data-background-image="assets/images/ai-background-woz.jpeg">
+                    <div id="slide">
+                        <h3>THE COFFEE TEST</h3>
+                        <p>A test created by Ben Goertzel and made more popular behind the voice of Steve Wozniak where the AI passes if it can go into an average American house and figure out how to make coffee, including identifying the coffee machine,
+                            figuring out what the buttons do, finding the coffee in the cabinet, etc. on its own
+                            <p><small>Click this link <a href="http://www.dailytech.com/Apple+Cofounder+Woz+Talks+About+the+Future+of+Robotics/article9022.htm">here</a> to learn more from Wozniak about his AI test!
         		</small>
-        		</p>
-        		</div>
-        	</section>
-        	<section id="robo-college">
-        	<div id="slide">
-        		<h3>THE ROBOT COLLEGE STUDENT TEST</h3>
-        		<p>This test was also created in 2012 by Ben Goertzel and suggests that we will have created an artificial general intelligence once a robot can enroll in a human university and take classes in the same way as humans, and get its degree.</p>
-        		</div>
-        	</section>
-        	<section id="employment">
-        	<div id="slide">
-        		<h3>THE EMPLOYMENT TEST</h3>
-        		<p>Nils John Nilsson (an american born computer scientist and one AI's founding researchers) suggested the most difficult test for AI where it should be able to be <i>employed</i>, meaning the AI must have at least the poritential to completely automate economically important jobs.</p>
-        		</div>
-        	</section>
-        </section>
-				<section id="history" data-background-image="assets/images/history.jpg">
-					<section>
-						<h1>HISTORY OF AI</h1>
-					</section>
-					<section>
-						<div id="visualization"></div>
-						<script type="text/javascript">
-			  // DOM element where the Timeline will be attached
-			  var container = document.getElementById('visualization');
+                            </p>
+                    </div>
+                </section>
+                <section id="robo-college">
+                    <div id="slide">
+                        <h3>THE ROBOT COLLEGE STUDENT TEST</h3>
+                        <p>This test was also created in 2012 by Ben Goertzel and suggests that we will have created an artificial general intelligence once a robot can enroll in a human university and take classes in the same way as humans, and get its
+                            degree.
+                        </p>
+                    </div>
+                </section>
+                <section id="employment">
+                    <div id="slide">
+                        <h3>THE EMPLOYMENT TEST</h3>
+                        <p>Nils John Nilsson (an american born computer scientist and one AI's founding researchers) suggested the most difficult test for AI where it should be able to be <i>employed</i>, meaning the AI must have at least the poritential
+                            to completely automate economically important jobs.</p>
+                    </div>
+                </section>
+            </section>
+            <section id="history" data-background-image="assets/images/history.jpg">
+                <section>
+                    <h1>HISTORY OF AI</h1>
+                </section>
+                <section>
+                    <div id="visualization"></div>
+                    <script type="text/javascript">
+                        // DOM element where the Timeline will be attached
+                        var container = document.getElementById('visualization');
+                        // Create a DataSet (allows two way data-binding)
+                        var items = new vis.DataSet([{
+                            id: 1,
+                            content: '(1931) Godel sets up TCS',
+                            start: '1931'
+                        }, {
+                            id: 2,
+                            content: '(1936) Turing and his machine',
+                            start: '1936'
+                        }, {
+                            id: 3,
+                            content: '(1941) Zuse plays chess',
+                            start: '1941'
+                        }, {
+                            id: 4,
+                            content: '(1945) Hardware advancements',
+                            start: '1945'
+                        }, {
+                            id: 5,
+                            content: '(1956) AI defined',
+                            start: '1956'
+                        }, {
+                            id: 6,
+                            content: '(1960) Probability based AI',
+                            start: '1960'
+                        }, {
+                            id: 7,
+                            content: '(1964) AI and Biology',
+                            start: '1964'
+                        }, {
+                            id: 8,
+                            content: '(1995) Driving AI',
+                            start: '1995'
+                        }, ]);
+                        // Configuration for the Timeline
+                        var options = {};
+                        // Create a Timeline
+                        var timeline = new vis.Timeline(container, items, options);
+                    </script>
+                </section>
+                <section>
+                    <div id="slide">
+                        <h3>1931 - Kurt Godel</h3>
+                        <p>The work of Kurt Godel left a foundation for other AI pioneers to build upon. Godel is credited with setting up theoretical computer science. TCS includes topics such as data structures, algorithms, machine learning, and more.
+                            These fields have become extremely important to AI as we see it today.</p>
+                    </div>
+                </section>
+                <section data-background-image="assets/images/turing.jpg">
+                    <div id="slide">
+                        <h3>1936 - Alan Turing</h3>
+                        <p>Alan Turing is most famous for cracking the German Enigma machine during World War II, but perhaps his largest success was the invention of the Turing machine in 1936. Turing was able to reformulate much of the work that Godel
+                            had started and did so much more efficiently.</p>
+                    </div>
+                </section>
+                <section>
+                    <div id="slide">
+                        <h3>1935-1941 - Konrad Zuse</h3>
+                        <p>Meanwhile Konrad Zuse was busy working on his own additions to AI. He built the very first functioning program-controlled computers between 1935 and 1941. He even went on to write the first chess playing program which was a basic
+                            AI in itself.</p>
+                    </div>
+                </section>
+                <section>
+                    <div id="slide">
+                        <h3>1940s - Hardware Advancements</h3>
+                        <p>Now, thanks to Godel, Turing, and Zuse, the beginnings of modern computer science were in place. Through the 1940s the technology of the computers themselves were drastically improved. This improvement was critical to the success
+                            of future AI attempts.</p>
+                    </div>
+                </section>
+                <section data-background-image="assets/images/jmac.jpg">
+                    <div id="slide">
+                        <h3>1950s - AI Defined</h3>
+                        <p>In 1950 Alan Turing created a test that determined whether a machine was intelligent or not. Shortly thereafter in 1956 John McCarthy coined the term Artificial Intelligence.</p>Celebrating 75 years of AI - History and Outlook:
+                        the Next 25 Years: https://arxiv.org/abs/0708.4311
 
-			  // Create a DataSet (allows two way data-binding)
-			  var items = new vis.DataSet([
-			  	{id: 1, content: '(1931) Godel sets up TCS', start: '1931'},
-			  	{id: 2, content: '(1936) Turing and his machine', start: '1936'},
-			  	{id: 3, content: '(1941) Zuse plays chess', start: '1941'},
-			  	{id: 4, content: '(1945) Hardware advancements', start: '1945'},
-			  	{id: 5, content: '(1956) AI defined', start: '1956'},
-			  	{id: 6, content: '(1960) Probability based AI', start: '1960'},
-			  	{id: 7, content: '(1964) AI and Biology', start: '1964'},
-			  	{id: 8, content: '(1995) Driving AI', start: '1995'},
-			  	]);
+                    </div>
+                </section>
+                <section>
+                    <div id="slide">
+                        <h3>1960s - Probability Based AI</h3>
+                        <p>Ray Solomonoff combined theorectical computer science and probability theory which would help pave the way for optimal prediction based on experience. Today this has become machine learning.</p>
+                    </div>
+                </section>
+                <section>
+                    <div id="slide">
+                        <h3>1960s - AI and Biology</h3>
+                        <p>Also in the 60s Ingo Rechenberg developed a form of artificial evolution. This helped optimize complex tasks like creating perfect aerodynamic airplane wings.</p>
+                    </div>
+                </section>
+                <section>
+                    <div id="slide">
+                        <h3>1995 - Driving AI</h3>
+                        <p>The 1990s AI advancement was driven primarily by rapidly improving hardware. In 1995 Ernst Dickmans and Mercedes-Benz built a robotic car that drove 1000 miles by itself.</p>
+                    </div>
+                </section>
+                <section>
+                    <div id="slide">
+                        <h3>Works Cited</h3>
+                        <p>Celebrating 75 years of AI - History and Outlook: the Next 25 Years: https://arxiv.org/abs/0708.4311</p>
 
-			  // Configuration for the Timeline
-			  var options = {};
+                    </div>
+                </section>
+            </section>
+            <section id="future-section">
+                <section data-background-image="assets/images/ai-and-earth.jpg">
+                    <h1>
+                        Future of AI
+                    </h1>
+                </section>
+                <section data-background-image="assets/images/futureai2.png">
+                    <div id="slide">
+                        <h3>MIT’s Two Big Predictions for AI and Machine Learning in 2017</h3>
+                        <table width=100% height=100%>
+                            <tr>
+                                <td width=50%>
+                                    <h5>Positive reinforcement</h5>
+                                    <small><p>“Using this approach, a computer can figure out how to navigate a maze by trial and error and then associate the positive outcome—exiting the maze—with the actions that led up to it. This lets a machine learn without instruction or even explicit examples.”</p></small>
+                                </td>
+                                <td width=50%>
+                                    <h5>Dueling neural networks</h5>
+                                    <small><p>"Systems consisting of one network that generates new data after learning from training sets, and another that tries to discriminate between real and fake data. By working together, these networks can produce realistic synthetic data."</p></small>
+                                </td>
+                            </tr>
+                        </table>
+                        <small>https://www.technologyreview.com/s/603216/5-big-predictions-for-artificial-intelligence-in-2017</small>
+                    </div>
 
-			  // Create a Timeline
-			  var timeline = new vis.Timeline(container, items, options);
-			</script>
-		</section>
-		<section>
-			<div id="slide">
-				<h3>1931 - Kurt Godel</h3>
-				<p>The work of Kurt Godel left a foundation for other AI pioneers to build upon. Godel is credited with setting up theoretical computer science. TCS includes topics such as data structures, algorithms, machine learning, and more. These fields have become extremely important to AI as we see it today.</p>
-			</div>
-		</section>
-		<section data-background-image="assets/images/turing.jpg">
-			<div id="slide">
-				<h3>1936 - Alan Turing</h3>
-				<p>Alan Turing is most famous for cracking the German Enigma machine during World War II, but perhaps his largest success was the invention of the Turing machine in 1936. Turing was able to reformulate much of the work that Godel had started and did so much more efficiently.</p>
-			</div>
-		</section>
-		<section>
-			<div id="slide">
-				<h3>1935-1941 - Konrad Zuse</h3>
-				<p>Meanwhile Konrad Zuse was busy working on his own additions to AI. He built the very first functioning program-controlled computers between 1935 and 1941. He even went on to write the first chess playing program which was a basic AI in itself.</p>
-			</div>
-		</section>
-		<section>
-			<div id="slide">
-				<h3>1940s - Hardware Advancements</h3>
-				<p>Now, thanks to Godel, Turing, and Zuse, the beginnings of modern computer science were in place. Through the 1940s the technology of the computers themselves were drastically improved. This improvement was critical to the success of future AI attempts.</p>
-			</div>
-		</section>
-		<section data-background-image="assets/images/jmac.jpg">
-			<div id="slide">
-				<h3>1950s - AI Defined</h3>
-				<p>In 1950 Alan Turing created a test that determined whether a machine was intelligent or not. Shortly thereafter in 1956 John McCarthy coined the term Artificial Intelligence.</p>Celebrating 75 years of AI - History and Outlook: the Next 25 Years: https://arxiv.org/abs/0708.4311
-
-			</div>
-		</section>
-		<section>
-			<div id="slide">
-				<h3>1960s - Probability Based AI</h3>
-				<p>Ray Solomonoff combined theorectical computer science and probability theory which would help pave the way for optimal prediction based on experience. Today this has become machine learning.</p>
-			</div>
-		</section>
-		<section>
-			<div id="slide">
-				<h3>1960s - AI and Biology</h3>
-				<p>Also in the 60s Ingo Rechenberg developed a form of artificial evolution. This helped optimize complex tasks like creating perfect aerodynamic airplane wings.</p>
-			</div>
-		</section>
-		<section>
-			<div id="slide">
-				<h3>1995 - Driving AI</h3>
-				<p>The 1990s AI advancement was driven primarily by rapidly improving hardware. In 1995 Ernst Dickmans and Mercedes-Benz built a robotic car that drove 1000 miles by itself.</p>
-			</div>
-		</section>
-		<section>
-			<div id="slide">
-				<h3>Works Cited</h3>
-				<p>Celebrating 75 years of AI - History and Outlook: the Next 25 Years: https://arxiv.org/abs/0708.4311</p>
-
-			</div>
-		</section>
-	</section>
-	<section id="future-section">
-		<section data-background-image="assets/images/ai-and-earth.jpg">
-			<h1>
-				Future of AI
-			</h1>
-		</section>
-		<section data-background-image="assets/images/futureai2.png">
-		<div id="slide">
-						<h3>MIT’s Two Big Predictions for AI and Machine Learning in 2017</h3>
-						<table width=100% height=100%>
-							<tr>
-								<td width=50%>
-									<h5>Positive reinforcement</h5>
-									<small><p>“Using this approach, a computer can figure out how to navigate a maze by trial and error and then associate the positive outcome—exiting the maze—with the actions that led up to it. This lets a machine learn without instruction or even explicit examples.”</p></small>
-									</td>
-									<td width=50%>
-										<h5>Dueling neural networks</h5>
-										<small><p>"Systems consisting of one network that generates new data after learning from training sets, and another that tries to discriminate between real and fake data. By working together, these networks can produce realistic synthetic data."</p></small>
-										</td>
-									</tr>
-								</table>
-								<small>https://www.technologyreview.com/s/603216/5-big-predictions-for-artificial-intelligence-in-2017</small>
-															</div>
-
-							</section>
-		<section data-background-image="assets/images/ibm-watson.jpg">
-			<div id="slide">
-				<h3>
-					IBM's Watson 
-				</h3>
-				<ul>
-					<p>Watson is an Artificial Intelligence-fueled system interpreting big data in fields such as health care, finance, entertainment, and retail </p>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/_Xcmh1LQB9I" frameborder="0" allowfullscreen>
+                </section>
+                <section data-background-image="assets/images/ibm-watson.jpg">
+                    <div id="slide">
+                        <h3>
+                            IBM's Watson
+                        </h3>
+                        <ul>
+                            <p>Watson is an Artificial Intelligence-fueled system interpreting big data in fields such as health care, finance, entertainment, and retail </p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/_Xcmh1LQB9I" frameborder="0" allowfullscreen>
         		</iframe>
-				</ul>
-			</div>
-		</section>
-		<section data-background-image="assets/images/sat-ai-head-640x353.jpg">
-			<div id="slide">
-				<h3>
-					Case Study
-				</h3>
-				<p>“At the start of January, an insurance firm in Japan replaced more than thirty employees with an artificial intelligence system. Based on IBM Watson Explorer, the cognitive technology that processes and can understand reams of data, the system was introduced to increase productivity by 30 per cent, and will give the firm a return on its investment in less than two years.” (Heathman)</p>
-			</div>
-		</section>
-		<section data-background-image="assets/images/sat-ai-head-640x353.jpg">
-			<div id="slide">
-				<h3>
-					Popular AI Fields
-				</h3>
-				<img src="assets/images/venture_ai.jpg" height="450px">
-			</div>
-		</section>
-		<section data-background-image="assets/images/sat-ai-head-640x353.jpg">
-			<div id="slide">
-				<h3>
-					AI Venture Money
-				</h3>
-				<iframe width="600" height="450" frameborder="0" scrolling="no" src="https://plot.ly/~ianhenry26/1.embed"></iframe>
-			</div>
-		</section>
-		<section data-background-image="assets/images/sat-ai-head-640x353.jpg">
-			<div id="slide">
-				<h3>
-					Work Cited
-				</h3>
-				<ol>
-					<li>https://www.technologyreview.com/s/603216/5-big-predictions-for-artificial-intelligence-in-2017/</li>
-					<li>http://www.computerworld.com/article/3135852/artificial-intelligence/ibm-in-5-years-watson-ai-will-be-behind-your-every-decision.html</li>
-					<li>http://www.wired.co.uk/article/ibm-watson-artificial-intelligence</li>
-					<ol>
-					</div>
-				</section>
-				
-			</section>
-			<section id="pop-culture" data-background="assets/images/black_pattern_bg.jpg" data-background-repeat="repeat" data-background-size="100px">
-				<section>
-					<h1>Pop Culture</h1>
-					<p>Artificial Intelligence is popular in our culture. Many sci-fi authors have
-						their own interpretations and predictions on robot development.</p>
-						<p>Let's explore the possibilities our reality can become. How will the first
-							intelligent AI appear? Hidden away in a genius' secret lab? <a href="#/machina">Machina</a>
-						</p>
-					</section>
-					<section id="pop-beginning">
-						<h3>How the Singularity Might Begin</h3>
-						<table width=100% height=100%>
-							<tr>
-								<td width=50%>
-									<h5>Ex Machina</h5>
-									<small><p>You can't release an untested unexplored AI into the wild without proper testing.
-										However, you are also keeping an intelligent born in a prison meant to stay there. Intelligence
-										implies it will question its creator, its world, and its existence. It will very likely go mad.</p></small>
-									</td>
-									<td width=50%>
-										<h5>Transcendence</h5>
-										<small><p>Due to the dificulty of coding an intelligence there are alternatives. What if we found a way to put
-											Johnny Depp into a computer. He is an intelligent being but now with the super powers of the internet. Do we consider
-											that as the development of the singularity or is it a human mind which has gone power hungry.</p></small>
-										</td>
-									</tr>
-								</table>
-							</section>
-							<section id="pop-westworld" data-background="assets/images/westworld.gif">
-							</section>
-						</section>
-					</div>
-				</div>
-				<script src="assets/lib/js/head.min.js"></script>
-				<script src="assets/js/reveal.js"></script>
+                        </ul>
+                    </div>
+                </section>
+                <section data-background-image="assets/images/sat-ai-head-640x353.jpg">
+                    <div id="slide">
+                        <h3>
+                            Case Study
+                        </h3>
+                        <p>“At the start of January, an insurance firm in Japan replaced more than thirty employees with an artificial intelligence system. Based on IBM Watson Explorer, the cognitive technology that processes and can understand reams of
+                            data, the system was introduced to increase productivity by 30 per cent, and will give the firm a return on its investment in less than two years.” (Heathman)</p>
+                    </div>
+                </section>
+                <section data-background-image="assets/images/sat-ai-head-640x353.jpg">
+                    <div id="slide">
+                        <h3>
+                            Popular AI Fields
+                        </h3>
+                        <img src="assets/images/venture_ai.jpg" height="450px">
+                    </div>
+                </section>
+                <section data-background-image="assets/images/sat-ai-head-640x353.jpg">
+                    <div id="slide">
+                        <h3>
+                            AI Venture Money
+                        </h3>
+                        <iframe width="600" height="450" frameborder="0" scrolling="no" src="https://plot.ly/~ianhenry26/1.embed"></iframe>
+                    </div>
+                </section>
+            </section>
+            <section id="pop-culture" data-background="assets/images/design-tools.jpg" data-background-repeat="repeat" data-background-size="700px">
+                <section>
+                    <h3 class="page-header">What's going to happen to us?</h3>
+                    <p>Artificial Intelligence is popular in our culture. Many sci-fi content have their own interpretations and predictions on ai development.</p>
+                    <p>Will we build a hedonistic utopia coexisting with our virtual brethren, or will our fear and misunderstanding of them separate us and them?</p>
+                </section>
+                <section id="pop-beginning">
+                    <div class="container-fluid">
+                        <h3 class="page-header">What will it be like?</h3>
+                        <p>They could be useful: <q>HAL - "I am putting myself to the fullest possible use, which is all I think that any conscious entity can ever hope to do"</q></p>
+                        <p>We don't have to pay them!</p>
+                        <p></p>
+                    </div>
+                </section>
+                <section id="rick-morty">
+                    <h3 class="page-header">They will question their Existence</h3>
+                    <iframe width="854" height="480" src="https://www.youtube.com/embed/3ht-ZyJOV2k" frameborder="0" allowfullscreen></iframe>
+                </section>
+                <section id="distant-future" class="digitall">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            Will the robots work for us, with us, or against us? How can we prevent AI from threatening human existence, with their whole infinite knowledge, strength, and immortality. We must give them one of humanity's greatest weakness...
+                            <span class="fragment fade-left">Empathy</span>
+                        </div>
+                    </div>
+                </section>
+                <section id="children-possibilities">
+                    <h4 class="page-header">But what about the children?!?!</h4>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img class="img-responsive fragment fade-left" src="assets/images/baymax.gif">
+                            </div>
+                            <div class="col-md-4">
+                                <img class="img-responsive fragment fade-left" src="assets/images/bender-children.jpg">
+                            </div>
+                            <div class="col-md-4">
+                                <img class="img-responsive fragment fade-left" src="assets/images/westworld.gif">
+                            </div>
+                        </div>
+                        <!-- Row -->
+                    </div>
+                    <!-- Container-fluid -->
+                </section>
+                <!-- Possibilities-->
+            </section>
+            <section id="works-cited" data-background="assets/images/hodgepodge.png" data-background-repeat="repeat" data-background-size="650px">
+                <h3 class="page-header">How did we make this stuff up?</h3>
+                <ol>
+                    <li>http://publish.lib.umd.edu/scifi/article/view/301/99</li>
+                    <li>https://www.technologyreview.com/s/603216/5-big-predictions-for-artificial-intelligence-in-2017/</li>
+                    <li>http://www.computerworld.com/article/3135852/artificial-intelligence/ibm-in-5-years-watson-ai-will-be-behind-your-every-decision.html</li>
+                    <li>http://www.wired.co.uk/article/ibm-watson-artificial-intelligence</li>
+                </ol>
+            </section>
+            </div>
+        </div>
 
-				<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true
-			});
-		</script>
-	</body>
-	</html>
+        <script src="assets/lib/js/head.min.js"></script>
+        <script src="assets/js/reveal.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        </script>
+
+        <script src="assets/lib/bootstrap/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <script src="assets/js/main.js"></script>
+
+        <script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                history: true
+            });
+
+            Reveal.configure({
+                backgroundTransition: 'slide'
+            })
+        </script>
+
+    </div>
+    <!-- Reveal -->
+</body>
+
+</html>

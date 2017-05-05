@@ -48,14 +48,17 @@
 		<div class="reveal">
 			<div class="slides">
 				<section id="introduction" data-background-image="assets/images/brain.jpg">
+				<div id="slide">
 					<h1>Singularity</h1>
-					<p style="background-color:rgba(0, 0, 0, 0.75)">"The technological singularity is the hypothesis that the invention of artificial superintelligence will abruptly trigger runaway technological growth, resulting in unfathomable changes to human civilization."</p>
+					<p>Use arrow keys to navigate<br>Left/Right to change subjects<br>Up/Down to read more</p>
+				</div>
 				</section>
 				<section id="what-is" data-background="assets/images/ai-background.jpg" data-background-size=fit>
         	<section>
         		<h1>What is AI?</h1>
         	</section>
         	<section id="types">
+        	<div id="slide">
         		<h3>Types of AI:</h3>
         		<small><ul>
         			<li class="fragment fade-in"><b>Artificial Narrow Intelligence (Weak AI)</b> = An artificial intelligence system that can only specialize in one area and thats it.</li>
@@ -63,8 +66,10 @@
         			<li class="fragment fade-in"><b>Artificial Superintelligence (ASI)</b> = Said by Oxford philosopher Nick Bostrom to be "an intellect that is much smarter than the best human brains in practically every field, including scientific creativity, general wisdom, and social skills."</li>
 				</ul></small>
                 <p class="fragment">Want to know more? Then check out <a href="http://www.huffingtonpost.com/wait-but-why/the-ai-revolution-the-road-to-superintelligence_b_6648480.html">this article</a> from the Huffington Post</p>
+                </div>
         	</section>
         	<section id="requirements">
+        	<div id="slide">
         		<h3>Requirements of AI:</h3>
     			<ol>
     				<li class="fragment fade-up">Reason</li>
@@ -74,34 +79,45 @@
     				<li class="fragment fade-up">Communicate in Natural Language</li>
     				<li class="fragment fade-up">Integrate Skills Towards Common Goals</li>
     			</ol>
+    			</div>
         	</section>
         	<section id="confirmation">
+        	<div id="slide">
         		<h3>How do we know its the real thing?</h3>
 				<p class="fragment fade-down">By far the most well known is the <a href="#/turing">Turing Test</a></p>
 				<p class="fragment fade-left">Next is a test that is considered to (probably) be more difficult is the <a href="#/coffee">Coffee Test</a></p>
 				<p class="fragment fade-right">Our next way of testing AI which is believed to be a more challenging definition is the <a href="#/robo-college">Robot College Student Test</a></p>
 				<p class="fragment fade-up">The final test for AI and considered to be "unfair" in difficulty because not all humans can complete it is the <a href="#/employment">Employment Test</a></p>
+				</div>
         	</section>
         	<section id="turing">
+        	<div id="slide">
         		<h3>THE TURING TEST</h3>
         		<p>Man vs. Computer: One participant must be able to distinguish human from computer.
         		If the participant cannot distinguish the two then the computer has passed.</p>
         		<iframe width="500" height="300" src="https://www.youtube.com/embed/sXx-PpEBR7k" frameborder="0" allowfullscreen>
         		</iframe>
+        		</div>
         	</section>
         	<section id="coffee">
+        	<div id="slide">
         		<h3>THE COFFEE TEST</h3>
         		<p>A test created by Ben Goertzel and made more popular behind the voice of Steve Wozniak where the AI passes if it can go into an average American house and figure out how to make coffee, 
         		including identifying the coffee machine, figuring out what the buttons do, finding the coffee in the cabinet, etc. on its own
         		</p>
+        		</div>
         	</section>
         	<section id="robo-college">
+        	<div id="slide">
         		<h3>THE ROBOT COLLEGE STUDENT TEST</h3>
         		<p>This test was also created in 2012 by Ben Goertzel and suggests that we will have created an artificial general intelligence once a robot can enroll in a human university and take classes in the same way as humans, and get its degree.</p>
+        		</div>
         	</section>
         	<section id="employment">
+        	<div id="slide">
         		<h3>THE EMPLOYMENT TEST</h3>
         		<p>Nils John Nilsson (an american born computer scientist and one AI's founding researchers) suggested the most difficult test for AI where it should be able to be <i>employed</i>, meaning the AI must have at least the poritential to completely automate economically important jobs.</p>
+        		</div>
         	</section>
         </section>
 				<section id="history" data-background-image="assets/images/history.jpg">
@@ -116,11 +132,14 @@
 
 			  // Create a DataSet (allows two way data-binding)
 			  var items = new vis.DataSet([
-			  	{id: 1, content: 'Godel sets up TCS', start: '1931'},
-			  	{id: 2, content: 'Turing and his machine', start: '1936'},
-			  	{id: 3, content: 'Zuse plays chess', start: '1941'},
-			  	{id: 4, content: 'Hardware advancements', start: '1945'},
-			  	{id: 5, content: 'AI defined', start: '1956'}
+			  	{id: 1, content: '(1931) Godel sets up TCS', start: '1931'},
+			  	{id: 2, content: '(1936) Turing and his machine', start: '1936'},
+			  	{id: 3, content: '(1941) Zuse plays chess', start: '1941'},
+			  	{id: 4, content: '(1945) Hardware advancements', start: '1945'},
+			  	{id: 5, content: '(1956) AI defined', start: '1956'},
+			  	{id: 6, content: '(1960) Probability based AI', start: '1960'},
+			  	{id: 7, content: '(1964) AI and Biology', start: '1964'},
+			  	{id: 8, content: '(1995) Driving AI', start: '1995'},
 			  	]);
 
 			  // Configuration for the Timeline
@@ -159,6 +178,24 @@
 				<h3>1950s - AI Defined</h3>
 				<p>In 1950 Alan Turing created a test that determined whether a machine was intelligent or not. Shortly thereafter in 1956 John McCarthy coined the term Artificial Intelligence.</p>Celebrating 75 years of AI - History and Outlook: the Next 25 Years: https://arxiv.org/abs/0708.4311
 
+			</div>
+		</section>
+		<section>
+			<div id="slide">
+				<h3>1960s - Probability Based AI</h3>
+				<p>Ray Solomonoff combined theorectical computer science and probability theory which would help pave the way for optimal prediction based on experience. Today this has become machine learning.</p>
+			</div>
+		</section>
+		<section>
+			<div id="slide">
+				<h3>1960s - AI and Biology</h3>
+				<p>Also in the 60s Ingo Rechenberg developed a form of artificial evolution. This helped optimize complex tasks like creating perfect aerodynamic airplane wings.</p>
+			</div>
+		</section>
+		<section>
+			<div id="slide">
+				<h3>1995 - Driving AI</h3>
+				<p>The 1990s AI advancement was driven primarily by rapidly improving hardware. In 1995 Ernst Dickmans and Mercedes-Benz built a robotic car that drove 1000 miles by itself.</p>
 			</div>
 		</section>
 		<section>
@@ -253,7 +290,6 @@
 						</section>
 					</div>
 				</div>
-
 				<script src="assets/lib/js/head.min.js"></script>
 				<script src="assets/js/reveal.js"></script>
 
